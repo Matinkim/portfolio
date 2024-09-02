@@ -1,0 +1,118 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #6062d4;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 2rem;
+  border-bottom: 2px solid #6062d4;
+  padding-bottom: 0.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 기본적으로 2열 레이아웃 */
+  gap: 1rem;
+}
+
+.project {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 1200px) {
+  .projects {
+    grid-template-columns: 1fr 1fr; /* 화면이 1200px 이하일 때 2열 */
+  }
+}
+
+@media (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr; /* 화면이 900px 이하일 때 1열 */
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 1rem; /* 화면이 600px 이하일 때 내부 여백 줄이기 */
+  }
+
+  header {
+    padding: 0.5rem 0; /* 화면이 600px 이하일 때 헤더 여백 줄이기 */
+  }
+
+  footer {
+    padding: 0.5rem; /* 화면이 600px 이하일 때 푸터 여백 줄이기 */
+  }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박순홍 포트폴리오</title>
+    <link rel="stylesheet" href="./style3.css" />
+
+    <!-- jQuery Slick Slider 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <header>
+      <nav>
+        <ul>
+          <a href="#mainSlide"><li class="menuBtn underline">HOME</li></a>
+          <a href="#introduction"
+            ><li class="menuBtn underline">INTRODUCTION</li></a
+          >
+          <a href="#project"><li class="menuBtn underline">PROJECT</li></a>
+          <a href="#contact"><li class="menuBtn underline">CONTACT</li></a>
+        </ul>
+      </nav>
+      <div id="mobileNav">
+        <ul>
+          <a href="#mainSlide">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                width="26"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M8 42V18L24.1 6 40 18v24H28.3V27.75h-8.65V42Zm3-3h5.65V24.75H31.3V39H37V19.5L24.1 9.75 11 19.5Zm13-14.65Z"
+                />
+              </svg>
+            </li>
+          </a>
+          <a href="#introduction">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                width="26"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M31.3 21.35q1.15 0 1.925-.775Q34 19.8 34 18.65t-.775-1.925q-.775-.775-1.925-.775t-1.925.775q-.775.775-.775 1.925t.775 1.925q.775.775 1.925.775Zm-14.6 0q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925q-.775-.775-1.925-.775t-1.925.775Q14 17.5 14 18.65t.775 1.925q.775.775 1.925.775Zm7.3 13.6q3.3 0 6.075-1.775Q32.85 31.4 34.1 28.35h-2.6q-1.15 2-3.15 3.075-2 1.075-4.3 1.075-2.35 0-4.375-1.05t-3.125-3.1H13.9q1.3 3.05 4.05 4.825Q20.7 34.95 24 34.95ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 23.95q0-4.1 1.575-7.75 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24.05 4q4.1 0 7.75 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm0-20Zm0 17q7.1 0 12.05-4.975Q41 31.05 41 24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24 41Z"
+                />
+              </svg>
+            </li>
+          </a>
+          <a href="#project">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                width="26"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M28.5 40v-3h6q1.05 0 1.775-.725Q37 35.55 37 34.5v-5q0-1.85 1.125-3.3 1.125-1.45 2.875-2v-.4q-1.75-.5-2.875-1.975T37 18.5v-5q0-1.05-.725-1.775Q35.55 11 34.5 11h-6V8h6q2.3 0 3.9 1.6t1.6 3.9v5q0 1.05.725 1.775Q41.45 21 42.5 21H44v6h-1.5q-1.05 0-1.775.725Q40 28.45 40 29.5v5q0 2.3-1.6 3.9T34.5 40Zm-15 0q-2.3 0-3.9-1.6T8 34.5v-5q0-1.05-.725-1.775Q6.55 27 5.5 27H4v-6h1.5q1.05 0 1.775-.725Q8 19.55 8 18.5v-5q0-2.3 1.6-3.9T13.5 8h6v3h-6q-1.05 0-1.775.725Q11 12.45 11 13.5v5q0 1.85-1.125 3.325T7 23.8v.4q1.75.55 2.875 2T11 29.5v5q0 1.05.725 1.775Q12.45 37 13.5 37h6v3Z"
+                />
+              </svg>
+            </li>
+          </a>
+          <a href="#contact">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                width="26"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z"
+                />
+              </svg>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ------------------------------------- 1. 메인 슬라이드 -->
+    <article id="mainSlide">
+      <!-- 텍스트 슬라이드 -->
+      <div class="text-slider-wrapper">
+        <div class="text-slider">
+          <div class="text-slide">
+            <h1 class="design_tool">
+              UI/UX DESIGN <br />
+              <span>Ps</span><span>Ai</span><span>Xd</span>
+            </h1>
+          </div>
+          <div class="text-slide">
+            <h1 class="design_tool">
+              WEB FRONT-END <br />
+              <span>Html</span><span>Css</span><span>Js</span>
+            </h1>
+          </div>
+          <div class="text-slide">
+            <h1 class="design_tool">
+              MOBILE FRONT-END <br />
+              <span>React</span><span>Flutter</span><span>Swift</span>
+            </h1>
+          </div>
+          <div class="text-slide">
+            <h1 class="design_tool">
+              APP DEVELOPMENT <br />
+              <span>Android</span><span>iOS</span><span>React</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사진 슬라이드 -->
+      <div class="photo-slider-wrapper">
+        <div class="photo-slider">
+          <div class="photo-slide">
+            <img src="images/main-slide1.jpg" alt="슬라이드1" />
+          </div>
+          <div class="photo-slide">
+            <img src="images/main-slide2.jpg" alt="슬라이드2" />
+          </div>
+          <div class="photo-slide">
+            <img src="images/main-slide3.jpg" alt="슬라이드3" />
+          </div>
+          <div class="photo-slide">
+            <img src="images/main-slide4.jpg" alt="슬라이드4" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ------------------------------------- 2. 소개 -->
+    <article id="introduction">
+      <div class="introduction-container">
+        <div class="left-part">
+          <img src="images/profile.jpg" alt="프로필사진" />
+        </div>
+        <div class="right-part">
+          <div class="introduction-wrapper">
+            <h2 class="introduction-title">Introduction</h2>
+            <p class="introduction-text">
+              안녕하세요! 웹 프론트엔드 개발자 박순홍입니다. 디자인과 사용자
+              경험을 중요시하는 프로젝트를 진행하며, 웹과 모바일 애플리케이션
+              개발을 통해 혁신적인 솔루션을 제공합니다. 다양한 디자인 도구와
+              개발 기술을 활용하여 뛰어난 사용자 경험을 창출합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ------------------------------------- 3. 프로젝트 -->
+    <article id="project">
+      <h2 class="project-title">Projects</h2>
+      <div class="project-list">
+        <!-- 프로젝트 카드 -->
+        <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card-image">
+            <img src="images/project1.jpg" alt="프로젝트1" />
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">프로젝트1</h3>
+            <p class="project-card-description">
+              프로젝트1에 대한 간단한 설명이 여기에 들어갑니다.
+            </p>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card-image">
+            <img src="images/project2.jpg" alt="프로젝트2" />
+          </div>
+          <div class="project-card-content">
+            <h3 class="project-card-title">프로젝트2</h3>
+            <p class="project-card-description">
+              프로젝트2에 대한 간단한 설명이 여기에 들어갑니다.
+            </p>
+          </div>
+        </div>
+        <!-- 추가적인 프로젝트 카드들 -->
+      </div>
+    </article>
+
+    <!-- ------------------------------------- 4. 연락처 -->
+    <article id="contact">
+      <h2 class="contact-title">Contact</h2>
+      <p class="contact-info">연락처 정보가 여기에 들어갑니다.</p>
+      <form
+        class="contact-form"
+        action="contact-form-handler.php"
+        method="post"
+      >
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">메시지:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">전송</button>
+      </form>
+    </article>
+
+    <!-- AOS 스크립트 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".text-slider").slick({
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          fade: true,
+          speed: 1000,
+        });
+        $(".photo-slider").slick({
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      });
+      AOS.init();
+    </script>
+  </body>
+</html>
